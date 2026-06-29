@@ -3,7 +3,7 @@ import telebot
 import os
 
 TOKEN = os.environ['TELEGRAM_TOKEN']
-CHAT_ID = "본인의_숫자_ID" # 본인의 Chat ID 숫자를 넣으세요
+CHAT_ID = "8632143584" # 본인의 Chat ID 숫자를 넣으세요
 bot = telebot.TeleBot(TOKEN)
 
 # 종목 설정
