@@ -35,7 +35,7 @@ def send_report():
             
             report += f"🔹 [{item['name']}]\n"
             report += f"평가금액: {current_total:,.0f}원\n"
-            report += f"수익금: {profit_loss:+,,.0f}원 ({profit_rate:+.2f}%)\n"
+            report += f"수익금: {profit_loss:+,.0f}원 ({profit_rate:+.2f}%)\n"
             report += f"현재가: {current_price:,.0f}원\n\n"
             
             total_buy_sum += buy_total
