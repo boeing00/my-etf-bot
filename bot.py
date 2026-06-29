@@ -52,7 +52,7 @@ def send_report():
         report += f"📊 [총 합계]\n"
         report += f"총 매수금액: {total_buy_sum:,.0f}원\n"
         report += f"총 평가금액: {total_current_sum:,.0f}원\n"
-        report += f"총 수익금액: {total_profit_loss:+,,.0f}원\n"
+        report += f"총 수익금액: {total_profit_loss:+,.0f}원\n"
         report += f"총 수익률: {total_profit_rate:+.2f}%"
     
     bot.send_message(CHAT_ID, report)
