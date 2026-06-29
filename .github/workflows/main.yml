@@ -1,0 +1,29 @@
+name: Daily Stock Report
+
+on:
+  schedule:
+    # 매일 한국시간 오후 4시 30분 (UTC 기준 07:30)
+    - cron: '30 7 * * *'
+  workflow_dispatch: # 우리가 수동으로 실행해볼 수 있게 해주는 버튼
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+
+      - name: Run bot
+        env:
+          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python bot.py
