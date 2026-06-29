@@ -9,7 +9,9 @@ bot = telebot.TeleBot(TOKEN)
 
 portfolio = [
     {"name": "나스닥100", "symbol": "QQQ", "buy_price": 400.0, "quantity": 10},
-    {"name": "삼성전자", "symbol": "005930.KS", "buy_price": 70000, "quantity": 50}
+    {"name": "PLUS 선진국MSCI(합성H)", "symbol": "195970.KS", "buy_price": 15935, "quantity": 63}
+    {"name": "kodex 200", "symbol": "069500.KS", "buy_price": 134140, "quantity": 7}
+    {"name": "KODEX 미국S&P500", "symbol": "379800.KS", "buy_price": 25352, "quantity": 49}
 ]
 
 def send_report():
