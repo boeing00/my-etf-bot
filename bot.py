@@ -8,9 +8,10 @@ bot = telebot.TeleBot(TOKEN)
 
 # 종목 설정
 portfolio = [
-    {"name": "PLUS 선진국MSCI(합성H)", "symbol": "195970.KS", "buy_price": 15935, "quantity": 63},
-    {"name": "kodex 200", "symbol": "069500.KS", "buy_price": 134140, "quantity": 7},
-    {"name": "KODEX 미국S&P500", "symbol": "379800.KS", "buy_price": 25352, "quantity": 49}# 추가 종목이 있다면 여기에 계속 넣으세요
+    {"name": "PLUS 선진국MSCI(합성H)", "symbol": "195970.KS", "buy_price": 16031, "quantity": 187},
+    {"name": "kodex 200", "symbol": "069500.KS", "buy_price": 135006, "quantity": 22},
+    {"name": "KODEX 미국S&P500", "symbol": "379800.KS", "buy_price": 25839, "quantity": 113},
+    {"name": "필라델피아반도체", "symbol": "381180.KS", "buy_price": 57970, "quantity": 26}# 추가 종목이 있다면 여기에 계속 넣으세요
 ]
 
 def send_report():
